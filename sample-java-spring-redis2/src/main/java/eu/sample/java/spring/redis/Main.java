@@ -5,6 +5,8 @@ import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
 /**
+ * 参考<br>
+ * http://tm8r.hateblo.jp/entry/20120329/1333033094
  * 
  * @author eisakuu
  * 

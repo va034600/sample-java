@@ -13,10 +13,10 @@
 
 	<!-- redis template definition -->
 	<bean id="redisTemplate" class="org.springframework.data.redis.core.RedisTemplate"
-		p:connection-factory-ref="jedisConnFactory" />
+		p:connection-factory-ref="jedisConnFactory" p:key-serializer-ref="stringKeySerializer" />
 
-	<bean id="stringRedisTemplate" class="org.springframework.data.redis.core.StringRedisTemplate"
-		p:connection-factory-ref="jedisConnFactory" />
+	<bean id="stringKeySerializer"
+		class="org.springframework.data.redis.serializer.StringRedisSerializer" />
 
 	<bean id="sampleService2" class="eu.sample.java.spring.redis.SampleService2" />
 
