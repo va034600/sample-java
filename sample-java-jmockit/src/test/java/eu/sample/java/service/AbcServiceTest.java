@@ -24,14 +24,11 @@ public class AbcServiceTest {
 
     @Before
     public void setUp() throws Exception {
-        // テスト対象クラスにモックDAOをインジェクションする。
-        // ここではJMockitのリフレクションユーティリティを使ってprivateフィールドに設定している。
         Deencapsulation.setField(abcService, defDao);
     }
 
     @Test
     public void testAbc() {
-        // モックオブジェクトに対して期待動作を宣言
         new Expectations() {
             {
                 defDao.getAaa();
