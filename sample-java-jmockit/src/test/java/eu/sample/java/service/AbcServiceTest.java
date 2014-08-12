@@ -22,7 +22,7 @@ public class AbcServiceTest {
     }
 
     @Test
-    public void testAbc() {
+    public void testAaa() {
         new Expectations() {
             {
                 defDao.getAaa();
