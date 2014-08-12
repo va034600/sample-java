@@ -7,7 +7,7 @@ import eu.sample.java.dao.DefDao;
 
 @Service
 public class AbcService {
-    @Autowired
+    @Autowired(required=false)
     private DefDao defDao;
 
     int aaa(int a, int b){
