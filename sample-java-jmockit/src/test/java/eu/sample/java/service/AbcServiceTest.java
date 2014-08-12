@@ -7,18 +7,12 @@ import mockit.Mocked;
 
 import org.junit.Before;
 import org.junit.Test;
-import org.junit.runner.RunWith;
-import org.springframework.test.context.ContextConfiguration;
-import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 
 import eu.sample.java.dao.DefDao;
-import eu.sample.java.service.AbcService;
 
-@RunWith(SpringJUnit4ClassRunner.class)
-@ContextConfiguration("classpath:context.xml")
 public class AbcServiceTest {
-    // @Tested
-    AbcService abcService = new AbcService();
+    private AbcService abcService = new AbcService();
+
     @Mocked
     private DefDao defDao;
 
