@@ -10,6 +10,7 @@ import org.junit.Test;
 
 import eu.sample.java.dao.DefDao;
 
+//@RunWith(JMockit.class)
 public class AbcServiceTest {
     private AbcService abcService = new AbcService();
 
