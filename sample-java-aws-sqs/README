@@ -1,0 +1,7 @@
+AWS SDK for Java
+http://aws.amazon.com/jp/sdkforjava/
+
+samples/AmazonSimpleQueueService/SimpleQueueServiceSample.java
+
+・credentials を編集
+・credentials を ~/.aws 移動
