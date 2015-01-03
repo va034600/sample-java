@@ -1,0 +1,9 @@
+環境設定
+・template.swf-flow-samples.propertiesから.swf-flow-samples.propertiesを作成する。
+・.swf-flow-samples.propertiesを設定する。(AWS.Access.ID,AWS.Secret.Key,AWS.Account.ID) 
+・ホームディレクトリに.swf-flow-samples.propertiesを移動する。
+
+実行手順
+・ActivityHost を実行する。
+・WorkflowHost を実行する。
+・WorkflowExecutionStarter を実行する。
