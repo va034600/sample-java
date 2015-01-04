@@ -1,0 +1,21 @@
+AWS設定
+・US EASTでdomain(Samples)を作成する。
+
+環境設定
+・template.swf-flow-samples.propertiesから.swf-flow-samples.propertiesを作成する。
+・.swf-flow-samples.propertiesを設定する。(AWS.Access.ID,AWS.Secret.Key,AWS.Account.ID) 
+・作成した.swf-flow-samples.propertiesをユーザホームディレクトリに移動する。
+
+eclipse
+・mavenプロジェクトをインポートする。
+・AWS Flow frameworkはPluggable Annotation Processing APIを使っているため
+sample-java-aws-swf-spring-commonのワークスペースの設定でEnable Annotation Processingにチェックをつける。
+(.apt_generatedにソースが生成される。)
+
+実行手順
+・ActivityHost を実行する。
+・WorkflowHost を実行する。
+・WorkflowExecutionStarter を実行する。
+
+実行結果
+ActivityHostにHello User!と表示される。
