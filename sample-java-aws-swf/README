@@ -4,7 +4,13 @@ AWS設定
 環境設定
 ・template.swf-flow-samples.propertiesから.swf-flow-samples.propertiesを作成する。
 ・.swf-flow-samples.propertiesを設定する。(AWS.Access.ID,AWS.Secret.Key,AWS.Account.ID) 
-・作成した.swf-flow-samples.propertiesをホームディレクトリに移動する。
+・作成した.swf-flow-samples.propertiesをユーザホームディレクトリに移動する。
+
+eclipse
+・mavenプロジェクトをインポートする。
+・AWS Flow frameworkはPluggable Annotation Processing APIを使っているため
+sample-java-aws-swf-commonのワークスペースの設定でEnable Annotation Processingにチェックをつける。
+(.apt_generatedにソースが生成される。)
 
 実行手順
 ・ActivityHost を実行する。
