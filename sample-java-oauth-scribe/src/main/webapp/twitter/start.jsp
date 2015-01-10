@@ -11,8 +11,8 @@
 
 	OAuthService service = new ServiceBuilder()
 			.provider(TwitterApi.class)
-			.apiKey(resourceBundle.getString("api_key"))
-			.apiSecret(resourceBundle.getString("api_secret"))
+			.apiKey(resourceBundle.getString("twitter_api_key"))
+			.apiSecret(resourceBundle.getString("twitter_api_secret"))
 			.callback("http://127.0.0.1:8080/sample-java-oauth-scribe/twitter/end.jsp")
 			.build();
 

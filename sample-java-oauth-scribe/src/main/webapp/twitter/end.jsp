@@ -10,8 +10,8 @@
 
 	OAuthService oAuthService = new ServiceBuilder()
 			.provider(TwitterApi.class)
-			.apiKey(resourceBundle.getString("api_key"))
-			.apiSecret(resourceBundle.getString("api_secret")).build();
+			.apiKey(resourceBundle.getString("twitter_api_key"))
+			.apiSecret(resourceBundle.getString("twitter_api_secret")).build();
 
 	String oauthVerifier = request.getParameter("oauth_verifier");
 	Token oauthToken = new Token(request.getParameter("oauth_token"), oauthVerifier);

@@ -10,8 +10,8 @@
 			.getBundle("application");
 
 	OAuthConsumer oAuthConsumer = new DefaultOAuthConsumer(
-			resourceBundle.getString("api_key"),
-			resourceBundle.getString("api_secret"));
+			resourceBundle.getString("twitter_api_key"),
+			resourceBundle.getString("twitter_api_secret"));
 
 	OAuthProvider oAuthProvider = new DefaultOAuthProvider(
 			"https://api.twitter.com/oauth/request_token",
