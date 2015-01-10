@@ -11,7 +11,7 @@ OAuthService oAuthService = new ServiceBuilder()
 	.provider(GoogleDriveOauthApi.class)
 	.apiKey(resourceBundle.getString("google_api_key"))
 	.apiSecret(resourceBundle.getString("google_api_secret"))
-	.callback("http://localhost:8080/sample-java-oauth-scribe/google/redirect.jsp")
+	.callback("http://127.0.0.1:8080/sample-java-oauth-scribe/google/redirect.jsp")
 	.build();
 
 String oauthVerifier = request.getParameter("code");
@@ -23,6 +23,6 @@ Token accessToken = oAuthService.getAccessToken(null, verifier);
 session.setAttribute("accessToken", accessToken);
 session.setAttribute("oauthVerifier", oauthVerifier);
 
-response.sendRedirect("http://localhost:8080/sample-java-oauth-scribe/google/end.jsp");
+response.sendRedirect("http://127.0.0.1:8080/sample-java-oauth-scribe/google/end.jsp");
 %>
 

@@ -11,7 +11,7 @@ OAuthService oAuthService = new ServiceBuilder()
 	.provider(GoogleDriveOauthApi.class)
 	.apiKey(resourceBundle.getString("google_api_key"))
 	.apiSecret(resourceBundle.getString("google_api_secret"))
-	.callback("http://localhost:8080/sample-java-oauth-scribe/google/redirect.jsp")
+	.callback("http://127.0.0.1:8080/sample-java-oauth-scribe/google/redirect.jsp")
 	.scope("https://www.googleapis.com/auth/plus.login")
 	.build();
 
