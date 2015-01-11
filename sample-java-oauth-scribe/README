@@ -12,7 +12,9 @@ googleでアプリケーション登録
 ・google developer console => API からGoogle+ APIのステータスを有効にする。
 (localhost、127.0.0.1 どちらもOK)
 
-eclipse設定
+環境ファイル
 ・application.properties.template を application.properties としてコピーする。
 ・application.propertiesを設定する。
+
+eclipse設定
 ・webappsに登録する。
