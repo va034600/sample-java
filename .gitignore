@@ -6,3 +6,4 @@ gen
 !.travis.yml
 **/.DS_Store
 .idea
+build
