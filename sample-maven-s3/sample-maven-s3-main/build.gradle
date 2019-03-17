@@ -1,0 +1,39 @@
+buildscript {
+    repositories {
+        mavenCentral()
+    }
+    dependencies {
+        classpath 'com.amazonaws:aws-java-sdk:1.11.38'
+    }
+}
+
+plugins {
+    id 'java'
+}
+
+apply plugin: 'application'
+
+group 'com.va034600'
+version '1.0-SNAPSHOT'
+
+sourceCompatibility = 1.8
+
+repositories {
+    maven {
+        url REPOSITORY_URL
+        credentials(AwsCredentials) {
+            def defaultCredentials = new com.amazonaws.auth.DefaultAWSCredentialsProviderChain().getCredentials()
+            accessKey defaultCredentials.getAWSAccessKeyId()
+            secretKey defaultCredentials.getAWSSecretKey()
+        }
+    }
+    mavenCentral()
+}
+
+dependencies {
+    compile group: 'com.va034600', name: 'sample-maven-s3-publish', version: '1.0.0'
+
+    testCompile group: 'junit', name: 'junit', version: '4.12'
+}
+
+mainClassName= 'Main'
